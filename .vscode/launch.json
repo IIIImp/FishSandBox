@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Launch Configuration Sample
+        {
+            "name": "Debug Tests",
+            "type": "cppvsdbg", "request": "launch",
+            "program": "${workspaceFolder}/build/Tests/Debug/CppEnvTest.exe",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "CMake: Build Tests"
+        }
+    ]
+}

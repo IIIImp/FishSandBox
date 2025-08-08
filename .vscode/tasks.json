@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+    // Tasks Sample  
+    {
+      "label": "CMake: Configure Tests",
+      "type": "shell", "command": "cmake",
+      "args": [
+        "-S", "${workspaceFolder}/Demo/Tests",
+        "-B", "${workspaceFolder}/build/Tests"
+      ]
+    },
+    {
+      "label": "CMake: Build Tests",
+      "type": "shell", "command": "cmake",
+      "args": [
+        "--build", "${workspaceFolder}/build/Tests",
+        "--config", "Debug"
+      ],
+      "dependsOn": ["CMake: Configure Tests"]
+    },
+  ]
+}
